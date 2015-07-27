@@ -28,4 +28,4 @@ What did I tell you? Simple!
 ## Schematic
 Here's a little schematic thing I made in [Fritzing](http://fritzing.org/):
 
-![Fritzing schematic](https://raw.githubusercontent.com/okofish/java/master/schematic.png "Great idea, Jesse.")
+![Fritzing schematic](https://raw.githubusercontent.com/okofish/java/master/schematic.png "Great job, Jesse.")
