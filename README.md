@@ -1,12 +1,14 @@
 # java
 ### *IoT coffeemaker with superpowers*
 
+![](https://raw.githubusercontent.com/okofish/java/master/images/logotype.png)
+
 These are the various source files used in my [hackathon project Java](http://challengepost.com/software/java-8xjm41). Here's a brief description of what they do:
 
 #### http.agent.nut and imp.nut
 Agent and device scripts to run on the Electric Imp
 
-*You don't have to edit anything in here to get Java running.*
+*You don't have to edit anything in here to get Java up and running.*
 #### Everything inside JavaControl
 Source for the PhoneGap/Cordova app GUI for the Imp API
 
@@ -14,7 +16,7 @@ Source for the PhoneGap/Cordova app GUI for the Imp API
 #### sketch.ino
 Arduino sketch to relay (heh) voltages on pin 9 of the imp to the relay shield on the Arduino
 
-*You don't have to edit anything in here to get Java running, but feel free to replace the Arduino with a relay that works directly with the Imp.*
+*You don't have to edit anything in here to get Java up and running, but feel free to replace the Arduino with a relay that works directly with the Imp.*
 
 ## API overview
 The API is *really* simple. There are only three methods:
@@ -28,4 +30,7 @@ What did I tell you? Simple!
 ## Schematic
 Here's a little schematic thing I made in [Fritzing](http://fritzing.org/):
 
-![Fritzing schematic](https://raw.githubusercontent.com/okofish/java/master/schematic.png "Great job, Jesse.")
+![Fritzing schematic](https://raw.githubusercontent.com/okofish/java/master/images/schematic.png "Great job, Jesse.")
+
+---
+*Needless to say, this project is not written in the Java language. I just thought it's a witty name.*
