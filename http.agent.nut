@@ -16,6 +16,9 @@ function request_handler(request, response) {
       } else if (request.query.brew == "stop") {
         device.send("pot.brew", "stop");
         response.send(200, "Brewing halt command sent...");
+      } else if (request.query.brew == "toggle") {
+        device.send("pot.brew", "toggle");
+        response.send(200, "Toggling brew state...");
       } else {
         response.send(400, "Invalid query");
       }

@@ -5,17 +5,20 @@ brewing <- false;
 
 function changeBrewState(brewState)
 {
-  if (brewState == "start" && brewing == false)
-    {
+  if (brewState == "start" && brewing == false) {
         brewing = true;
         startBrew();
         server.log("Brewing has commenced!");
-    }
-    else if (brewState == "stop" && brewing == true)
-    {
+    } else if (brewState == "stop" && brewing == true) {
         brewing = false;
         stopBrew();
         server.log("Brewing has been halted!");
+    } else if (brewState == "toggle") {
+      if (brewing == false) {
+        changeBrewState("start")
+      } else if (brewing == true) {
+        changeBrewState("stop")
+      }
     }
 }
 
