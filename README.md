@@ -17,6 +17,10 @@ Source for the PhoneGap/Cordova app GUI for the Imp API
 Arduino sketch to relay (heh) voltages on pin 9 of the imp to the relay shield on the Arduino
 
 *You don't have to edit anything in here to get Java up and running, but feel free to replace the Arduino with a relay that works directly with the Imp.*
+#### button/photon.ino
+Code for a Particle Photon-powered button that toggles the coffee maker state.
+
+*You will need to put your Imp agent ID in the `agent` variable on line 11. You can find the ID above the agent code in the online Imp IDE.*
 
 ## API overview
 The API is *really* simple. There are only three methods:
@@ -24,6 +28,7 @@ The API is *really* simple. There are only three methods:
 - <agent url>?getstate: Gets the current state of the relay. Returns "yes" or "no".
 - <agent url>?brew=start: Closes the relay to start the coffeemaker. Returns "Brewing commencement command sent...".
 - <agent url>?brew=stop: Opens the relay to stop the coffeemaker. Returns "Brewing halt command sent...".
+- <agent url>?brew=toggle: Sets the relay to the opposite of its current state. Returns "Toggling brew state...".
   
 What did I tell you? Simple!
 
